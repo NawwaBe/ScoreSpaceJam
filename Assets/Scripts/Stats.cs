@@ -12,8 +12,8 @@ public class Stats : MonoBehaviour
 
     [Header("Popularity")]
     public int popDicreaseMultiplier;
-    public float popMax;
-    public float popular;
+    public static float popMax = 150;
+    public static float popular;
     public Image popularity;
     public Sprite popFull;
     public Sprite popEmpty;
@@ -107,7 +107,7 @@ public class Stats : MonoBehaviour
     {
         MyCoroutin = StartCoroutine(AddScore());
 
-        popular = popMax / 3;
+        popular = popMax / 1;
         health = healthMax;
     }
 
